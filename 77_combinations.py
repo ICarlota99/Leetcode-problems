@@ -64,4 +64,3 @@ def new_value(x, y):
     
 
 main()
-
