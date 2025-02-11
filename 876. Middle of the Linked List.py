@@ -16,7 +16,6 @@
 
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        output = []
         slow = head # Middle node
         fast = head # Last node
 
