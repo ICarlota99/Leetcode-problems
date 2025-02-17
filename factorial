@@ -1,0 +1,27 @@
+def factorial(n):
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+
+def total_combinations(n):
+    combinations = 0
+    for k in range(n):
+        if k == 0:
+            combinations = 1
+        elif k+1 == n:
+            combinations += factorial(n)
+        else:
+            combinations += factorial(n) / factorial(k+1) * factorial(n - (k + 1))
+    return combinations
+
+
+def numTilePossibilities(tiles):
+    letters = len(tiles)
+    return(total_combinations(letters)) 
+
+def main():
+    print(numTilePossibilities("AAB"))
+
+main()
