@@ -24,5 +24,5 @@ class Solution:
             counter = 0
         return True
 
-# Runtime: 7ms
-# Memory: 18MB
+# Runtime: 7ms O(M∗N)
+# Memory: 18MB O(1)
